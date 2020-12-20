@@ -3,7 +3,7 @@
 const popoverButtons = Array.from(document.getElementsByClassName('popover-button'));
 
 function showPopover() {
-  const activePopover = document.getElementById(`${this.dataset.id}`);
+  const activePopover = document.getElementById(`popover${this.dataset.id}`);
   if (activePopover) {
     document.body.removeChild(activePopover);
   } else {
